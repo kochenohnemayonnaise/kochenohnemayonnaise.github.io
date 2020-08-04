@@ -37,9 +37,7 @@
   width: 100%;
   background: white;
   grid-template-areas:
-  ". header-startseite ."
   ". bilder-grid ."
-  ". footer-startseite ."
 }
 
 .griddeldy-grid{
