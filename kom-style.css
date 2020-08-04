@@ -36,7 +36,7 @@
   width: 100%;
   background: white;
   grid-template-areas:
-  ". bilder-grid ."
+  ". bilder-grid .";
 }
 
 .griddeldy-grid{
@@ -54,7 +54,7 @@
   width: 100%;
   background: white;
   grid-template-areas:
-  ". startseite-link ."
+  ". startseite-link .";
 
 }
 
@@ -82,7 +82,7 @@
   padding-bottom: 20px;
   grid-template-areas:
       ". quelle ."
-      ". logo-icon ."
+      ". logo-icon .";
 }
 
 
