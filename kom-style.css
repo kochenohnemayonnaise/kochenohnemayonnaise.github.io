@@ -1,0 +1,142 @@
+.logo {
+
+  width: 80px;
+  height: auto;
+  padding-left: 10px;
+
+}
+
+.rezept-bild {
+  max-width: 100%;
+  height: width;
+
+
+}
+
+.padding-bild {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.main-rezept {
+  display: grid;
+  grid-template-columns: 1fr minmax(150px, 500px) 1fr;
+  width: 100%;
+  background: white;
+  grid-template-areas:
+      ". header ."
+      ". picture ."
+      ". content .";
+
+}
+
+.main-startseite {
+  display: grid;
+  grid-template-columns: 1fr minmax(150px, 500px) 1fr;
+  width: 100%;
+  background: white;
+  grid-template-areas:
+  ". header-startseite ."
+  ". bilder-grid ."
+  ". footer-startseite ."
+}
+
+.griddeldy-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  grid-gap: 5px;
+  padding-top: 20px;
+
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px; 
+}
+
+#start-bild {
+  grid-area: bilder-grid;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr minmax(150px, 500px) 1fr;
+  width: 100%;
+  background: white;
+  padding-bottom: 20px;
+  grid-template-areas:
+      ". quelle ."
+      ". logo-icon ."
+}
+
+
+#header {
+  grid-area: header;
+}
+
+#rezept-img{
+  grid-area: picture;
+}
+
+#rezept-inhalt{
+  grid-area: content;
+}
+
+#quelle {
+  grid-area: quelle;
+  font-family: 'Reenie Beanie', cursive;
+  color: #6b8f85;
+}
+
+#logo-icon {
+  grid-area: logo-icon;
+  font-family: 'Reenie Beanie', cursive;
+  color: #6b8f85;
+}
+
+
+h2 {
+font-family: 'Rubik Mono One', sans-serif;
+color: #6b8f85;
+}
+
+h3 {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #96B0A9;
+}
+
+p, li {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+  color: black;
+}
+
+hr {
+  border-top: 2px dashed #6b8f85;
+
+}
+
+#weiter {
+  width: 20px;
+
+}
+
+#zurueck {
+  width: 20px;
+
+}
+
+.weiter{
+  justify-self: end;
+}
+
+.zurueck{
+  justify-self: start;
+}
