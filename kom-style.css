@@ -39,6 +39,18 @@
   ". bilder-grid .";
 }
 
+
+@media (max-width: 600px){
+  .main-startseite {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    background: white;
+    grid-template-areas:
+    "bilder-grid";
+  }
+
+
 .griddeldy-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
