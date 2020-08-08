@@ -158,20 +158,21 @@ hr {
   }
   .header-startseite{
     grid-template-columns: 1fr 10fr 1fr;
+    padding-bottom: 10px;
   }
   .footer{
     grid-template-columns: 1fr 10fr 1fr;
   }
   h2 {
-  font-size: 3em;
+  font-size: 3.5em;
   }
 
   h3 {
-  font-size: 2.5em;
+  font-size: 3em;
   }
 
   p, li {
-  font-size: 2em;
+  font-size: 2.5em;
   }
 
   .rezept-bild {
@@ -188,14 +189,14 @@ hr {
   }
 
   #quelle {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   #logo-icon {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .logo {
-    width: 10em;
+    width: 8em;
     height: auto;
   }
 
