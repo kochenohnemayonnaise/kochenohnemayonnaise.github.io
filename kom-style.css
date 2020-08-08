@@ -36,7 +36,7 @@
 .main-startseite {
   display: grid;
   grid-template-columns: 1fr minmax(150px, 500px) 1fr;
- 
+  width: 100%;
   background: white;
   grid-template-areas:
   ". bilder-grid .";
@@ -146,4 +146,17 @@ a {
 
 hr {
   border-top: 2px dashed #6b8f85;
+}
+
+
+/*media queries*/
+@media (max-width: 600px) {
+  .main-startseite {
+    display: grid;
+    grid-template-columns: 0.2fr minmax(150px, 500px) 0.2fr;
+    width: 100%;
+    background: white;
+    grid-template-areas:
+    ". bilder-grid .";
+  }
 }
