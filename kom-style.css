@@ -1,35 +1,38 @@
+/*picture formatting used on all pages*/
 .logo {
-
   width: 80px;
   height: auto;
-
 }
 
+/*picture formatting used on all pages*/
 .rezept-bild {
   max-width: 100%;
   height: auto;
-  display: block; 
-
-
+  display: block;
 }
 
+/*picture formatting used on recipe pages*/
 .padding-bild {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-.main-rezept {
+/*grid for logo on all pages*/
+.header-startseite {
   display: grid;
   grid-template-columns: 1fr minmax(150px, 500px) 1fr;
   width: 100%;
   background: white;
   grid-template-areas:
-      ". header ."
-      ". picture ."
-      ". content .";
-
+  ". startseite-link .";
 }
 
+#startseite-link {
+  grid-area: startseite-link;
+}
+
+
+/*grid for main page*/
 .main-startseite {
   display: grid;
   grid-template-columns: 1fr minmax(150px, 500px) 1fr;
@@ -39,41 +42,66 @@
   ". bilder-grid .";
 }
 
+/*id of div griddeldy-grid that is nested inside main class main-startseite*/
+#start-bild {
+  grid-area: bilder-grid;
+}
+
+/*grid of instagram-like overview of pictures on main page*/
 .griddeldy-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   grid-gap: 5px;
   padding-top: 20px;
-
 }
 
-.header-startseite {
+
+/*grid for recipe page*/
+.main-rezept {
   display: grid;
   grid-template-columns: 1fr minmax(150px, 500px) 1fr;
   width: 100%;
   background: white;
   grid-template-areas:
-  ". startseite-link .";
-
+      ". picture ."
+      ". content .";
 }
 
-#startseite-link {
-  grid-area: startseite-link;
+#rezept-img{
+  grid-area: picture;
 }
 
+#rezept-inhalt{
+  grid-area: content;
+}
+
+/*going from one recipe to the next or previous*/
 .navigation {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
-#start-bild {
-  grid-area: bilder-grid;
+#weiter {
+  width: 20px;
 }
 
+#zurueck {
+  width: 20px;
+}
+
+.weiter{
+  justify-self: end;
+}
+
+.zurueck{
+  justify-self: start;
+}
+
+/*grid for footer*/
 .footer {
   display: grid;
   grid-template-columns: 1fr minmax(150px, 500px) 1fr;
@@ -83,19 +111,6 @@
   grid-template-areas:
       ". quelle ."
       ". logo-icon .";
-}
-
-
-#header {
-  grid-area: header;
-}
-
-#rezept-img{
-  grid-area: picture;
-}
-
-#rezept-inhalt{
-  grid-area: content;
 }
 
 #quelle {
@@ -110,7 +125,7 @@
   color: #6b8f85;
 }
 
-
+/*general styling of fonts etc*/
 h2 {
 font-family: 'Rubik Mono One', sans-serif;
 color: #6b8f85;
@@ -123,7 +138,6 @@ h3 {
 
 p, li {
   font-family: 'Roboto', sans-serif;
-
 }
 
 a {
@@ -132,23 +146,4 @@ a {
 
 hr {
   border-top: 2px dashed #6b8f85;
-
-}
-
-#weiter {
-  width: 20px;
-
-}
-
-#zurueck {
-  width: 20px;
-
-}
-
-.weiter{
-  justify-self: end;
-}
-
-.zurueck{
-  justify-self: start;
 }
