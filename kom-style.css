@@ -8,7 +8,6 @@
 .rezept-bild {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 /*picture formatting used on recipe pages*/
@@ -164,7 +163,7 @@ hr {
     grid-template-columns: 1fr 10fr 1fr;
   }
   h2 {
-  font-size: 1.5em;
+  font-size: 3em;
   }
 
 }
