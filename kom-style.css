@@ -159,6 +159,7 @@ hr {
   .header-startseite{
     grid-template-columns: 1fr 10fr 1fr;
     padding-bottom: 10px;
+    padding-top: 10px;
   }
   .footer{
     grid-template-columns: 1fr 10fr 1fr;
