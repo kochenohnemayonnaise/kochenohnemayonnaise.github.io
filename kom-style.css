@@ -150,13 +150,14 @@ hr {
 
 
 /*media queries*/
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+  .main-rezept{
+    grid-template-columns: 1fr 10fr 1fr;
+  }
   .main-startseite {
-    display: grid;
-    grid-template-columns: 0.2fr minmax(150px, 500px) 0.2fr;
-    width: 100%;
-    background: white;
-    grid-template-areas:
-    ". bilder-grid .";
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .header-startseite{
+    grid-template-columns: 1fr 10fr 1fr;
   }
 }
