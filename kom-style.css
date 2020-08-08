@@ -20,7 +20,7 @@
 /*grid for logo on all pages*/
 .header-startseite {
   display: grid;
-  grid-template-columns: 1fr minmax(150px, 500px) 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   width: 100%;
   background: white;
   grid-template-areas:
@@ -35,7 +35,7 @@
 /*grid for main page*/
 .main-startseite {
   display: grid;
-  grid-template-columns: 1fr minmax(150px, 500px) 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   width: 100%;
   background: white;
   grid-template-areas:
@@ -60,7 +60,7 @@
 /*grid for recipe page*/
 .main-rezept {
   display: grid;
-  grid-template-columns: 1fr minmax(150px, 500px) 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   width: 100%;
   background: white;
   grid-template-areas:
@@ -104,7 +104,7 @@
 /*grid for footer*/
 .footer {
   display: grid;
-  grid-template-columns: 1fr minmax(150px, 500px) 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   width: 100%;
   background: white;
   padding-bottom: 20px;
@@ -158,6 +158,9 @@ hr {
     grid-template-columns: 1fr 10fr 1fr;
   }
   .header-startseite{
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .footer{
     grid-template-columns: 1fr 10fr 1fr;
   }
 }
