@@ -163,4 +163,9 @@ hr {
   .footer{
     grid-template-columns: 1fr 10fr 1fr;
   }
+  h2 {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #6b8f85;
+  }
+
 }
