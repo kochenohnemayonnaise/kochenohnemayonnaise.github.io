@@ -176,8 +176,8 @@ hr {
   }
 
   .rezept-bild {
-    width: 10fr;
-    height: auto;
+    width: 100%;
+    height: 100%;
   }
 
   #weiter {
