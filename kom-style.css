@@ -166,4 +166,25 @@ hr {
   font-size: 3em;
   }
 
+  h3 {
+  font-size: 2em;
+  }
+
+  p, li {
+  font-size: 1.5em;
+  }
+
+  .rezept-bild {
+    width: 10fr;
+    height: auto;
+  }
+
+  #weiter {
+    width: 4em;
+  }
+
+  #zurueck {
+    width: 4em;
+  }
+
 }
